@@ -1,0 +1,29 @@
+.panel-body {
+  background-color: grey;
+  border-width: 2%;
+  border-color: black;
+}
+
+h1 {
+  color: white;
+}
+
+.button-container {
+    width: 500px;
+    background: gray;
+    overflow-y: auto;
+}
+
+.button-container > a {
+display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: lightgray;
+    margin: 2%;
+    border-radius: 1%;
+}
+
+.menu-container {
+  display:flex;
+  justify-content: center;
+}
