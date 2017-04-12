@@ -27,9 +27,7 @@
                     //margin-right:0;
                 }
             }
-            .selected {
-                background-color: $light-blue;
-            }
+
         }
         .dice:first-child {
             margin-top: 6px;
@@ -49,16 +47,23 @@
 
 }
 h1 {
-  padding-top: 10%;
+  padding-top: 20%;
 }
 button {
-    background-color: orange; /* Green */
+
     border: none;
     color: white;
     font-size: 46px;
-}
-button.custom {
-    width: 37px !important;
-    background:grey;
+    width: 40px;
 
+}
+.custom {
+    width: 40px !important;
+
+}
+#color {
+  background-color: grey;
+}
+.selected {
+  background-color: orange;
 }

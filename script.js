@@ -1,30 +1,29 @@
-
 var dice = [
-    "FAAGFR",
-    "AKELGK",
-    "AFFGHS",
-    "KOCBYZ",
-    "OLJEYQ",
-    "FTHNTW",
-    "ITPERH",
-    "AEGITU",
-    "LORSEE",
-    "OWKHSA",
-    "CEILJT",
-    "OWDLBM",
-    "MNVXVZ",
-    "LAFCOE",
-    "QEJVHT",
-    "YPHSTM",
-    "DHLRLS",
-    "EIIPTS",
-    "EOTPTS",
-    "EIRJVC",
-    "FIRJSY",
-    "GRRLVN",
-    "PRRTRY",
-    "NORBDH",
-    "OYRCLX"
+    "FAAG",
+    "AKEL",
+    "AFFG",
+    "KOCB",
+    "OLJE",
+    "FTHN",
+    "ITPE",
+    "AEGI",
+    "LORS",
+    "OWSA",
+    "CEJT",
+    "OWBM",
+    "VXVZ",
+    "LCOE",
+    "QVHT",
+    "YSTM",
+    "DRLS",
+    "EPTS",
+    "EPTS",
+    "EJVC",
+    "FJSY",
+    "GLVN",
+    "PTRY",
+    "NBDH",
+    "OCLX"
 ];
 // variable for total points
 var totalPoints = 0;
@@ -54,7 +53,7 @@ var showCurrentWord = document.querySelector('#current-word');
           // get each die
           var currentDie = dice[i].split('');
           // random die side
-          var diceRoll = Math.floor(Math.random() * 6);
+          var diceRoll = Math.floor(Math.random() * 4);
           // set die innerHTML to current charactor
           allDie[i].innerHTML = currentDie[diceRoll];
      };
@@ -72,7 +71,7 @@ function selectDie() {
        for(var i = currentWord.length; i >= 0; i--) {
            if(currentWord[i] === this.innerHTML) {
                // unselect button css
-               //this.removeAttribute("class","selected");
+               this.removeAttribute("class","selected");
                // remove item
                currentWord.splice(i, 1);
            }
@@ -139,9 +138,29 @@ function addPoints() {
 };
 
 submitBtn.addEventListener('click', addPoints);
-
+/*
 $(document).ready(function(){
-    $(".custom").click(function(){
-        $("this").slideToggle();
+    $("#color").click(function(){
+      var background = $(this).style.backgroundColor;
+        if (background == "grey") {
+            document.getElementById("colorish").style.background = "orange";
+        } else {
+            document.getElementById("colorish").style.background = "grey";
+        }
+
     });
 });
+
+
+
+function colorchange(id) {
+
+    var background = document.getElementById("colorish").style.backgroundColor;
+    if (background == "") {
+        document.getElementById("colorish").style.background = "orange";
+    } else {
+        document.getElementById("colorish").style.background = "grey";
+    }
+
+}
+*/
