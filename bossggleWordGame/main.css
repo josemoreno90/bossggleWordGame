@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+#left-side {
+  width: 30%;
+  float: left;
+  background-color: grey;
+  border-radius: 2%;
+  border-color: black;
+}
+#right-side {
+  width: 70%;
+  float: right;
+}
+
+h1 {
+  color: white;
+}
+
+/*.button-container {
+    width: 500px;
+    background: gray;
+    overflow-y: auto;
+    display:inline-block;
+}
+
+.button-container > a {
+ display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: lightgray;
+    margin: 2%;
+    border-radius: 1%;
+}*/
+
+.menu-container {
+  width:auto;
+  color:black;
+}
+.btn-group {
+  float: right;
+  width: 500px;
+}
+.btn {
+  height:100px;
+  width: 100px;
+  border: 10px solid black;
+  padding: 10px;
+  margin: 10px;
+  font-size: 40px;
+}
+ .btn:active {
+  background-color: orange;
+}
+
+.container > .btn-group {
+  border: 2% solid black;
+  align-content:stretch;
+}
