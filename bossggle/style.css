@@ -1,0 +1,69 @@
+.leftSide{
+  background: #D3D3D3;
+}
+
+#chosenLetter {
+
+}
+#dice-grid {
+        border: 5px solid $yellow-orange;
+        width: 280px;
+        height: 275px;
+        margin: 0 auto;
+        background-color: $blue;
+        .dice {
+            text-align: center;
+            button {
+                height: 46px;
+                width: 45px;
+                margin: 3px;
+                border-radius: 8px;
+                background-color: #fff;
+                box-shadow: -2px 2px 2px #000;
+                outline: none;
+                border: none;
+                font-weight: 800;
+                &:last-child {
+                    //margin-right:0;
+                }
+            }
+
+        }
+        .dice:first-child {
+            margin-top: 6px;
+        }
+}
+.letterButtons {
+  font-size: 300%;
+  text-align: center;
+}
+
+#submit-btn {
+  display : block;
+
+}
+.btn-right {
+  float:right;
+
+}
+h1 {
+  padding-top: 20%;
+}
+button {
+
+    border: none;
+    color: white;
+    font-size: 46px;
+    width: 40px;
+
+}
+.custom {
+    width: 40px !important;
+
+}
+#color {
+  background-color: grey;
+}
+.selected {
+  background-color: orange;
+}
