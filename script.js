@@ -1,30 +1,30 @@
 
 var dice = [
-    "FAAGFR",
-    "AKELGK",
-    "AFFGHS",
-    "KOCBYZ",
-    "OLJEYQ",
-    "FTHNTW",
-    "ITPERH",
-    "AEGITU",
-    "LORSEE",
-    "OWKHSA",
-    "CEILJT",
-    "OWDLBM",
-    "MNVXVZ",
-    "LAFCOE",
-    "QEJVHT",
-    "YPHSTM",
-    "DHLRLS",
-    "EIIPTS",
-    "EOTPTS",
-    "EIRJVC",
-    "FIRJSY",
-    "GRRLVN",
-    "PRRTRY",
-    "NORBDH",
-    "OYRCLX"
+    "FAGR",
+    "AKLG",
+    "AFHS",
+    "KOYZ",
+    "OLEQ",
+    "FHTW",
+    "ITRH",
+    "AETU",
+    "LORE",
+    "OWKA",
+    "CEIT",
+    "OWDM",
+    "MNVZ",
+    "LAOE",
+    "QEJT",
+    "YPTM",
+    "DHLS",
+    "EITS",
+    "EOTS",
+    "EIVC",
+    "FJSY",
+    "GRVN",
+    "PTRY",
+    "NODH",
+    "OYLX"
 ];
 // variable for total points
 var totalPoints = 0;
@@ -43,7 +43,7 @@ var table = document.querySelector('#score-table');
 var submitBtn = document.querySelector('#submit-btn');
 
 // get HTML buttons for placement
-var allDie = document.querySelectorAll('.dice button');
+var allDie = document.querySelectorAll('.dice [href]');
 
 // get div for current word display
 var showCurrentWord = document.querySelector('#current-word');
@@ -54,7 +54,7 @@ var showCurrentWord = document.querySelector('#current-word');
           // get each die
           var currentDie = dice[i].split('');
           // random die side
-          var diceRoll = Math.floor(Math.random() * 6);
+          var diceRoll = Math.floor(Math.random() * 4);
           // set die innerHTML to current charactor
           allDie[i].innerHTML = currentDie[diceRoll];
      };
@@ -72,7 +72,7 @@ function selectDie() {
        for(var i = currentWord.length; i >= 0; i--) {
            if(currentWord[i] === this.innerHTML) {
                // unselect button css
-               //this.removeAttribute("class","selected");
+               this.removeAttribute("class","selected");
                // remove item
                currentWord.splice(i, 1);
            }
@@ -139,9 +139,3 @@ function addPoints() {
 };
 
 submitBtn.addEventListener('click', addPoints);
-
-$(document).ready(function(){
-    $(".custom").click(function(){
-        $("this").slideToggle();
-    });
-});

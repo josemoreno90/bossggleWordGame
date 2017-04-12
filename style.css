@@ -1,10 +1,54 @@
-.leftSide{
+* {
+    box-sizing: border-box;
+}
+
+#left-side {
+  width: 30%;
+  float: left;
+  background-color: grey;
+  border-radius: 2%;
+  border-color: black;
+}
+#right-side {
+  width: 70%;
+  float: right;
+}
+
+h1 {
+  color: white;
+}
+
+.menu-container {
+  width:auto;
+  color:black;
+}
+.btn-group {
+  float: right;
+  width: 500px;
+}
+.btn-group > .btn {
+  height:100px;
+  width: 100px;
+  border: 10px solid black;
+  padding: 10px;
+  margin: 10px;
+  font-size: 40px;
+}
+ .btn:active {
+  background-color: orange;
+}
+.btn-toolbar {
+  float:right;
+  width:500px;
+}
+
+/*.leftSide{
   background: #D3D3D3;
 }
 
 #chosenLetter {
 
-}
+}*/
 #dice-grid {
         border: 5px solid $yellow-orange;
         width: 280px;
@@ -28,14 +72,14 @@
                 }
             }
             .selected {
-                background-color: $light-blue;
+                background-color: $orange;
             }
         }
         .dice:first-child {
             margin-top: 6px;
         }
 }
-.letterButtons {
+/*.letterButtons {
   font-size: 300%;
   text-align: center;
 }
@@ -51,8 +95,8 @@
 h1 {
   padding-top: 10%;
 }
-button {
-    background-color: orange; /* Green */
+.button {
+    background-color: orange;
     border: none;
     color: white;
     font-size: 46px;
@@ -60,5 +104,8 @@ button {
 button.custom {
     width: 37px !important;
     background:grey;
-
 }
+.custom:active {
+  background-color:orange;
+}
+*/
