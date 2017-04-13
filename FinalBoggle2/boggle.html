@@ -6,29 +6,24 @@
 <script src="boggleScript.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="boggleStyle2.css">
+    <link rel="stylesheet" href="boggleStyle.css">
     <title>Bossggle</title>
   </head>
   <body>
     <section class = "container-fluid" id="game">
-        <div id="left-side" class="col-xs-4">
+        <div class="left-side col-xs-4">
             <h1>Bossggle</h1>
 
           <p>Make words by clicking the letters! Only dictionary words count.</p>
 
           <table id="score-table">
-            <tr style="font-size: 1.75em;">
-
-                <td>Total:</td>
-
-                <td id="total-points">0</td>
-            </tr>
+                <tr>
                     <th>Word</th>
 
                     <th>Score</th>
                 </tr>
 
-                <tr style="font-size: 1.5em">
+                <tr>
 
                     <td>Total:</td>
 
@@ -36,43 +31,54 @@
                 </tr>
             </table>
 
+
+
         </div>
         <div id="right-side" class="col-xs-8">
-          <div class="row">
-  <h1 id = "current-word"></h1>
-          <div class = "btn-group btn-justified">
+          <div class = "btn-group">
           <button class = "buttton btn-success"id = "submit-btn">Submit</button>
           <button class = "button btn-primary"id = "submit-btn">Clear</button>
           <button class = "button btn-danger">Reset</button>
           </div>
-        </div>
-            <section id="dice-grid" class="col-xs-6">
+
+            <h1 id = "current-word"></h1>
+            <section id="dice-grid">
                 <div class="dice">
-                    <div><button class = 'custom'>1</button></div>
-                    <div><button class = 'custom'>1</button></div>
-                    <div><button class = 'custom'>1</button></div>
-                    <div><button class = 'custom'>1</button></div>
-                    <div><button class = 'custom'>1</button></div>
-                    <div><button class = 'custom'>1</button></div>
-                    <div><button class = 'custom'>1</button></div>
-                    <div><button class = 'custom'>1</button></div>
-                    <div><button class = 'custom'>1</button></div>
-                    <div><button class = 'custom'>1</button></div>
-                    <div><button class = 'custom'>1</button></div>
-                    <div><button class = 'custom'>1</button></div>
-                    <div><button class = 'custom'>1</button></div>
-                    <div><button class = 'custom'>1</button></div>
-                    <div><button class = 'custom'>1</button></div>
-                    <div><button class = 'custom'>1</button></div>
-                    <div><button class = 'custom'>1</button></div>
-                    <div><button class = 'custom'>1</button></div>
-                    <div><button class = 'custom'>1</button></div>
-                    <div><button class = 'custom'>1</button></div>
-                    <div><button class = 'custom'>1</button></div>
-                    <div><button class = 'custom'>1</button></div>
-                    <div><button class = 'custom'>1</button></div>
-                    <div><button class = 'custom'>1</button></div>
-                    <div><button class = 'custom'>1</button></div>
+                  <div class="button-row">
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                  </div>
+                  <div class="button-row">
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                  </div>
+                  <div class="button-row">
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                  </div>
+                  <div class="button-row">
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                  </div>
+                  <div class="button-row">
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                  </div>
                 </div>
             </section>
 
