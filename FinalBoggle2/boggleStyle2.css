@@ -34,7 +34,9 @@ p {
 }
 
  #dice-grid {
-   display: grid
+   display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
    width: 60vmax;
    height: auto;
    float: right;
@@ -47,11 +49,11 @@ p {
     float: right;
     padding: 1em;
 }
-.button-row {
+/*.button-row {
   float: right;
   overflow:auto;
   width: auto;
-}
+}*/
 .button-row > button {
     height: 2em;
     width: 2em;

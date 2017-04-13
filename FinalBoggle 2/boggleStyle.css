@@ -1,4 +1,41 @@
-.leftSide{
+* {
+    box-sizing: border-box;
+}
+
+#left-side {
+  width: 30%;
+  float: left;
+  background-color: grey;
+  border-radius: 2%;
+  border-color: black;
+}
+#right-side {
+  width: 70%;
+  float: right;
+}
+#currentWord {
+  float:right;
+}
+#score-table {
+  background-color: inherit;
+}
+.selected {
+  background-color: orange;
+}
+.button-row {
+  float: right;
+  width: 500px;
+}
+.button-row > button {
+  height: 80px;
+  width: 80px;
+  border: 5px solid black;
+  padding: 10px;
+  margin: 5px;
+  font-size: 40px;
+}
+
+/*.leftSide{
   background: #D3D3D3;
 }
 
@@ -59,7 +96,4 @@ button {
     width: 50px !important;
 
 }
-
-.selected {
-  background-color: orange;
-}
+*/

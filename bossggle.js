@@ -1,30 +1,44 @@
+/*
+$("btn").click(function(){
+    if(clicked){
+        $(this).css('background-color', 'red');
+        clicked  = false;
+    } else {
+        $(this).css('background-color', 'blue');
+        clicked  = true;
+    }
+});
+var allDie = document.querySelectorAll('.dice btn');
+*/
+// list of dice
 var dice = [
-    "FAAETG",
-    "AKEWYL",
-    "AFFWRG",
-    "KOCYIB",
-    "OLJTOE",
-    "FTHNUN",
-    "ITPFKE",
-    "AEGGKI",
-    "LORVMS",
-    "OWSZHA",
-    "CEJOPT",
-    "OWBUOM",
-    "VXVDWZ",
-    "LCOELF",
-    "QVHTJK",
-    "YSTMFH",
-    "DRLSET",
-    "EPTSOP",
-    "EPTSIY",
-    "EJVALC",
-    "FJSVBY",
-    "GLXNVN",
-    "PTZMRY",
-    "NBSLDH",
-    "DGOCLX"
+    "aars",
+    "aaee",
+    "airs",
+    "adnn",
+    "aeem",
+    "aemu",
+    "agmn",
+    "afsy",
+    "bqxz",
+    "cnst",
+    "ceit",
+    "ilpt",
+    "ceit",
+    "dnot",
+    "dhho",
+    "lnor",
+    "dhno",
+    "eiit",
+    "emtt",
+    "ensu",
+    "fisy",
+    "gorw",
+    "ipry",
+    "nouw",
+    "ootu"
 ];
+
 // variable for total points
 var totalPoints = 0;
 var totalPointHolder = document.querySelector('#total-points');
@@ -42,7 +56,7 @@ var table = document.querySelector('#score-table');
 var submitBtn = document.querySelector('#submit-btn');
 
 // get HTML buttons for placement
-var allDie = document.querySelectorAll('.dice button');
+var allDie = document.querySelectorAll('.dice [href]');
 
 // get div for current word display
 var showCurrentWord = document.querySelector('#current-word');
@@ -53,11 +67,11 @@ var showCurrentWord = document.querySelector('#current-word');
           // get each die
           var currentDie = dice[i].split('');
           // random die side
-          var diceRoll = Math.floor(Math.random() * 6);
-          // set die innerHTML to current character
-          //allDie[i].innerHTML = currentDie(diceRoll);
+          var diceRoll = Math.floor(Math.random() * 4);
+          // set die innerHTML to current charactor
+          allDie[i].innerHTML = currentDie[diceRoll];
      };
-});
+}());
 
 // toggle class and add current letter to word
 function selectDie() {
@@ -71,7 +85,7 @@ function selectDie() {
        for(var i = currentWord.length; i >= 0; i--) {
            if(currentWord[i] === this.innerHTML) {
                // unselect button css
-               this.removeAttribute("class","selected");
+               //this.removeAttribute("class","selected");
                // remove item
                currentWord.splice(i, 1);
            }
@@ -109,11 +123,6 @@ function addPoints() {
           case (x < 3):
                alert('Your word must be more at least 3 charactors!');
                break;
-          case (x > 3):
-               points = x * 9;
-               totalPoints += points;
-               break;
-               /*
           case (x === 3 || x === 4):
                points = 1;
                totalPoints += points;
@@ -134,7 +143,6 @@ function addPoints() {
                points = 11;
                totalPoints += points;
                break;
-               */
           default:
                points = 0;
      }
@@ -144,23 +152,3 @@ function addPoints() {
 };
 
 submitBtn.addEventListener('click', addPoints);
-/*
-$(document).ready(function(){
-    $("#color").click(function(){
-      var background = $(this).style.backgroundColor;
-        if (background == "grey") {
-            document.getElementById("colorish").style.background = "orange";
-        } else {
-            document.getElementById("colorish").style.background = "grey";
-        }
-    });
-});
-function colorchange(id) {
-    var background = document.getElementById("colorish").style.backgroundColor;
-    if (background == "") {
-        document.getElementById("colorish").style.background = "orange";
-    } else {
-        document.getElementById("colorish").style.background = "grey";
-    }
-}
-*/
