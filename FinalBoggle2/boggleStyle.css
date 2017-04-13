@@ -1,11 +1,13 @@
 * {
     box-sizing: border-box;
 }
-
+body{
+  background-color:#e6e6ff;
+}
 #left-side {
   width: 30%;
   float: left;
-  background-color: grey;
+  background-color: #E0E0E0
   border-radius: 2%;
   border-color: black;
 }
@@ -14,13 +16,24 @@
   float: right;
 }
 #currentWord {
-  float:right;
+  float:left;
+}
+#score-table {
+  background-color: inherit;
+  float: left;
+  overflow:auto;
 }
 .selected {
   background-color: orange;
 }
+.btn-group {
+  font-size: 14px;
+  float:right;
+  padding: 2%;
+}
 .button-row {
   float: right;
+  overflow:auto;
   width: 500px;
 }
 .button-row > button {
