@@ -7,7 +7,7 @@ body{
 #left-side {
   width: 30%;
   float: left;
-  background-color: #E0E0E0;
+ background: linear-gradient(to top left, #ffff99 0%, #ccccff 100%);
   border-radius: 2%;
   border-color: black;
 }
@@ -16,7 +16,7 @@ body{
   float: right;
 }
 .well {
-  background-color:;
+   background: linear-gradient(to top left, #ffff99 0%, #ccccff 100%);
   display:inline-block;
 }
 h1 {
@@ -31,12 +31,14 @@ p {
 #score-table {
   background-color: inherit;
 display:inline-table;
+float:inherit;
 }
 
  #dice-grid {
    width: 37em;
    height: auto;
    background: linear-gradient(to top left, #ffff99 0%, #ccccff 100%);
+   float:inherit;
  }
 .selected {
   background-color: orange;
@@ -49,7 +51,7 @@ display:inline-table;
 .button-row {
  display:inline-block;
   width: auto;
-  clear: right;
+  float: right;
 }
 .button-row > button {
     height: 2em;
