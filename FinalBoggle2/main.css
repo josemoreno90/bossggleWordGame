@@ -15,8 +15,9 @@ body{
   width: 70%;
   float: right;
 }
-#currentWord {
-  float:left;
+.well {
+  background-color:;
+  display:inline-block;
 }
 h1 {
   width: 25vmax;
@@ -29,26 +30,24 @@ p {
 }
 #score-table {
   background-color: inherit;
-  float: left;
-  overflow:auto;
+display:inline-table;
 }
 
  #dice-grid {
-   width: 60vmax;
+   width: 37em;
    height: auto;
+   background: linear-gradient(to top left, #ffff99 0%, #ccccff 100%);
  }
 .selected {
   background-color: orange;
 }
 .btn-group {
     font-size: 1.5em;
-    float: right;
-
+    display:inline-block;
     padding: 1em;
 }
 .button-row {
-  float: right;
-  overflow:auto;
+ display:inline-block;
   width: auto;
   clear: right;
 }
