@@ -41,6 +41,8 @@ var table = document.querySelector('#score-table');
 // var for the submit button
 var submitBtn = document.querySelector('#submit-btn');
 var clearBtn = document.querySelector('#clear-btn')
+var resetBtn = document.querySelector('#reset-btn')
+
 // get HTML buttons for placement
 var allDie = document.querySelectorAll('.dice button');
 
@@ -88,7 +90,8 @@ for (var i = 0; i < allDie.length; i++) {
 //resets game
 function resetGame() {
 
-}
+ window.location.reload();
+};
 // reset word after submit
 function resetWord() {
    var row = table.insertRow(1);
@@ -134,7 +137,7 @@ function addPoints() {
           resetWord();
      }
 };
-
+resetBtn.addEventListener('click', resetGame)
 
 clearBtn.addEventListener('click', clearWord);
 
