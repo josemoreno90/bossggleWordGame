@@ -89,7 +89,7 @@ for (var i = 0; i < allDie.length; i++) {
 }
 //resets game
 function resetGame() {
-  
+
  window.location.reload();
 };
 // reset word after submit
