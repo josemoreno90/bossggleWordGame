@@ -10,8 +10,8 @@
     <title>Bossggle</title>
   </head>
   <body>
-    <section class = "container-fluid" id="game">
-        <div id="left-side" class="col-xs-4">
+    <div class = "container-fluid" id="game">
+        <div id="left-side" class="col-xs-4 col-lg-2">
             <h1>Bossggle</h1>
 
           <p>Make words by clicking the letters! Only dictionary words count.</p>
@@ -32,59 +32,61 @@
             </table>
 
         </div>
-        <div id="right-side" class="col-xs-8">
+        <div id="right-side" class="col-xs-8 col-lg-10">
           <div class="row">
-  <h1 id = "current-word" class="well center-block"></h1>
+  <h1 id = "current-word" class="col-xs-4 col-lg-6 col-lg-offset-2"></h1>
           <div class = "btn-group">
           <button class = "buttton btn-success"id = "submit-btn">Submit</button>
           <button class = "button btn-primary" id = "clear-btn">Clear</button>
           <button class = "button btn-danger" id = "reset-btn">Reset</button>
           </div>
         </div>
-            <section id="dice-grid">
+        <div class="row">
+            <div id="dice-grid" class="col-xs-8 col-lg-10">
                 <div class="dice">
-                  <div class="button-row">
+                  <div class="button-row col-xs-6 col-lg-8 col-lg-offset-1">
                     <button class = 'custom'>1</button>
                     <button class = 'custom'>1</button>
                     <button class = 'custom'>1</button>
                     <button class = 'custom'>1</button>
                     <button class = 'custom'>1</button>
                   </div>
-                  <div class="button-row">
+                  <<div class="button-row col-xs-6 col-lg-8 col-lg-offset-1">
                     <button class = 'custom'>1</button>
                     <button class = 'custom'>1</button>
                     <button class = 'custom'>1</button>
                     <button class = 'custom'>1</button>
                     <button class = 'custom'>1</button>
                   </div>
-                  <div class="button-row">
+                  <div class="button-row col-xs-6 col-lg-8 col-lg-offset-1">
                     <button class = 'custom'>1</button>
                     <button class = 'custom'>1</button>
                     <button class = 'custom'>1</button>
                     <button class = 'custom'>1</button>
                     <button class = 'custom'>1</button>
                   </div>
-                  <div class="button-row">
+                  <div class="button-row col-xs-6 col-lg-8 col-lg-offset-1">
                     <button class = 'custom'>1</button>
                     <button class = 'custom'>1</button>
                     <button class = 'custom'>1</button>
                     <button class = 'custom'>1</button>
                     <button class = 'custom'>1</button>
                   </div>
-                  <div class="button-row">
+                  <div class="button-row col-xs-6 col-lg-8 col-lg-offset-1">
                     <button class = 'custom'>1</button>
                     <button class = 'custom'>1</button>
                     <button class = 'custom'>1</button>
                     <button class = 'custom'>1</button>
                     <button class = 'custom'>1</button>
+                  </div>
                   </div>
                 </div>
-            </section>
+            </div>
 
 
         </div>
       </div>
-      </section>
+    </div>
       <script type="text/javascript" src="bossggle.js"></script>
   </body>
 </html>
