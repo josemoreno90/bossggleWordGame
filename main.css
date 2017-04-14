@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+body{
+  background-color:#e6e6ff;
+}
+#left-side {
+  width: 30%;
+  float: left;
+  background: linear-gradient(to top left, #ffff99 0%, #ccccff 100%);
+  border-radius: 2%;
+  border-color: black;
+}
+#right-side {
+  width: 70%;
+  float: right;
+}
+#current-word{
+  background: linear-gradient(to top left, #ffff99 0%, #ccccff 100%);
+  display:inline-block;
+}
+h1 {
+  width: 25vmax;
+  font-size: 4em;
+}
+p {
+    margin: 0 0 10px;
+    font-size: 2em;
+    text-align:center;
+}
+#score-table {
+  background-color: inherit;
+display:inline-table;
+}
+
+ #dice-grid {
+   width: auto;
+   height: auto;
+   display:inline-block;
+   background: linear-gradient(to top left, #ffff99 0%, #ccccff 100%);
+   float:right;
+ }
+.selected {
+  background-color: orange;
+}
+.btn-group {
+    font-size: 2em;
+    display:inline-block;
+    float: right;
+    padding-top: .75em;
+}
+.button-row {
+ display:inline-block;
+  width: auto;
+}
+.button-row > button {
+    height: 2em;
+    width: 2em;
+    border: .2em solid black;
+    margin: .10em;
+    font-size: 40px;
+    font-size: 4vw;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+/*.leftSide{
+  background: #D3D3D3;
+}
+
+
+#dice-grid {
+        border: 5px solid $yellow-orange;
+        width: 280px;
+        height: 275px;
+        margin: 0 auto;
+        background-color: $blue;
+        .dice {
+            text-align: center;
+            button {
+                height: 46px;
+                width: 45px;
+                margin: 3px;
+                border-radius: 8px;
+                background-color: #fff;
+                box-shadow: -2px 2px 2px #000;
+                outline: none;
+                border: none;
+                font-weight: 800;
+                &:last-child {
+                    //margin-right:0;
+                }
+            }
+
+        }
+        .dice:first-child {
+            margin-top: 6px;
+        }
+}
+.letterButtons {
+  font-size: 300%;
+  text-align: center;
+}
+
+#submit-btn {
+  display : block;
+
+}
+.btn-right {
+  float:right;
+
+}
+h1 {
+  padding-top: 20%;
+}
+button {
+
+    border: none;
+    color: white;
+    font-size: 46px;
+    width: 40px;
+
+}
+.custom {
+    width: 50px !important;
+
+}
+*/

@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="boggleScript.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Bossggle</title>
+  </head>
+  <body>
+    <div class = "container-fluid" id="game">
+        <div id="left-side" class="col-xs-4 col-lg-2">
+            <h1>Bossggle</h1>
+
+          <p>Make words by clicking the letters! Only dictionary words count.</p>
+
+          <table id="score-table">
+                <tr style="font-size: 2em">
+                    <th>Word</th>
+
+                    <th>Score</th>
+                </tr>
+
+                <tr style="font-size: 1.5em">
+
+                    <td>Total:</td>
+
+                    <td id="total-points">0</td>
+                </tr>
+            </table>
+
+        </div>
+        <div id="right-side" class="col-xs-8 col-lg-10">
+          <div class="row">
+  <h1 id = "current-word" class="col-xs-4 col-lg-6 col-lg-offset-2"></h1>
+          <div class = "btn-group">
+          <button class = "buttton btn-success"id = "submit-btn">Submit</button>
+          <button class = "button btn-primary" id = "clear-btn">Clear</button>
+          <button class = "button btn-danger" id = "reset-btn">Reset</button>
+          </div>
+        </div>
+        <div class="row">
+            <div id="dice-grid" class="col-xs-8 col-lg-10">
+                <div class="dice">
+                  <div class="button-row col-xs-6 col-lg-8 col-lg-offset-1">
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                  </div>
+                  <div class="button-row col-xs-6 col-lg-8 col-lg-offset-1">
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                  </div>
+                  <div class="button-row col-xs-6 col-lg-8 col-lg-offset-1">
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                  </div>
+                  <div class="button-row col-xs-6 col-lg-8 col-lg-offset-1">
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                  </div>
+                  <div class="button-row col-xs-6 col-lg-8 col-lg-offset-1">
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                    <button class = 'custom'>1</button>
+                  </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="source">
+            <p>
+            </a>Click me to see my <a href ="https://github.com/josemoreno90/bossggleWordGame/" class="fa fa-github"></a>
+            </p>
+            </div>
+        </div>
+      </div>
+    </div>
+      <script type="text/javascript" src="bossggle.js"></script>
+  </body>
+</html>
