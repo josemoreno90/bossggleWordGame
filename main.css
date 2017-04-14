@@ -7,7 +7,7 @@ body{
 #left-side {
   width: 30%;
   float: left;
- background: linear-gradient(to top left, #ffff99 0%, #ccccff 100%);
+  background: linear-gradient(to top left, #ffff99 0%, #ccccff 100%);
   border-radius: 2%;
   border-color: black;
 }
@@ -15,10 +15,9 @@ body{
   width: 70%;
   float: right;
 }
-.well {
-   background: linear-gradient(to top left, #ffff99 0%, #ccccff 100%);
+#current-word{
+  background: linear-gradient(to top left, #ffff99 0%, #ccccff 100%);
   display:inline-block;
-  alignt-contents:center;
 }
 h1 {
   width: 25vmax;
@@ -32,37 +31,45 @@ p {
 #score-table {
   background-color: inherit;
 display:inline-table;
-float:inherit;
 }
 
  #dice-grid {
-   width: 37em;
+   width: auto;
    height: auto;
+   display:inline-block;
    background: linear-gradient(to top left, #ffff99 0%, #ccccff 100%);
    float:right;
-   align-contents:right;
  }
 .selected {
   background-color: orange;
 }
 .btn-group {
-    font-size: 1.5em;
+    font-size: 2em;
     display:inline-block;
-    padding: 1em;
-    float:right;
+    float: right;
+    padding-top: .75em;
 }
 .button-row {
  display:inline-block;
   width: auto;
-  float: right;
 }
 .button-row > button {
     height: 2em;
     width: 2em;
     border: .2em solid black;
     margin: .10em;
-    font-size: 3em;
+    font-size: 40px;
+    font-size: 4vw;
 }
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
 
 /*.leftSide{
   background: #D3D3D3;
